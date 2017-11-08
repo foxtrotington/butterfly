@@ -2,7 +2,7 @@ import requests
 import json
 import csv
 import subprocess as sp
-import sys
+
 
 
 def listOfIdsNames():
@@ -18,8 +18,8 @@ def listOfIdsNames():
     return dictionary
 
 
-def getAccessToken(species):
-    print("Running...")
+def getAccessToken():
+    
     site = "https://www.inaturalist.org"
     app_id = '69345738565c2bd88f2dafa49857e426ad01918d5e5a72fcdde40d258f22b49c'
     app_secret = '62899ac1d355f1743b84db1e21e94f2bc40de4915cb7a2cb2afaeab41dfb0de8'
@@ -35,16 +35,22 @@ def getAccessToken(species):
     }
 
     response = requests.post(("%s/oauth/token" % site), payload)
-
     token = response.json()["access_token"]
     headers = {"Authorization": "Bearer %s" % token}
+
+    return headers
+
+
+def dataPuller(species,headers):
+    print("Running...")
+
     run = 1
     for butterfly in species:
         
         percent = round((run/len(species))*100,1)
-        #sp.call('cls',shell=True)
+        
         print(str(percent)+"%")
-        #print(str(butterfly))
+       
 
         obs_data = requests.get(("http://api.inaturalist.org/v1/observations?taxon_id=" + str(butterfly) +"&quality_grade=research&page=1"), headers=headers)
         jData = json.loads(obs_data.text)
@@ -66,7 +72,7 @@ def getAccessToken(species):
             obs_data = requests.get(("http://api.inaturalist.org/v1/observations?taxon_id=" + str(butterfly) +"&quality_grade=research&page="+str(i)), headers=headers) #TODO ids
 
             data = json.loads(obs_data.text)
-            record = 1
+            
             for records in data['results']:
 
                 holder = []
@@ -95,11 +101,12 @@ def getAccessToken(species):
             writer.writerows(tempList)
         tempList = []
 
+
 def main():
     print("Running")
     butterflys = listOfIdsNames()
-    dick = {"52773":"Poanes zabulon"}
-    getAccessToken(butterflys)
+    key = getAccessToken()
+    dataPuller(butterflys,key)
     print("Complete")
 
 main()
