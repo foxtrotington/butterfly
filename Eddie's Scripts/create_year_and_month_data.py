@@ -16,7 +16,6 @@ def readCsv(pathToCsv):
     df.to_csv("./observation_counts.csv", index=False)
 
 def groupSpeciesAndCreateFrame(df):
-    toReturn = pd.DataFrame(columns=headers)
     listToPutIntoDf = []
     months = pd.DataFrame(columns=headers[3:])
 
@@ -87,7 +86,6 @@ def flattenDictionary(dictVar):
             
 
 def main():
-    #readCsv("./ALLTHEFUCKING-FullData.csv")
     readCsv("./kensaku_master.csv")
 
 if __name__ == "__main__":
