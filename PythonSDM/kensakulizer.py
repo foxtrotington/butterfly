@@ -18,8 +18,7 @@ def listOfIdsNames():
 
 
 
-#("scientific_name", "longitude", "latitude",  "time_observed_at", "time_zone", "full_date")
-# 2, 3,4,7,8,6
+
 def cleaner(species):
 
 	data = {}
@@ -59,7 +58,6 @@ def cleaner(species):
 						observationData.append(row[5])
 						data[id][dates[0]][dates[1]].append(observationData)
 				
-						#writer.writerow(shit)
 
 			masterWrite = []
 			for ids in data:
