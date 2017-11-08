@@ -53,11 +53,11 @@ def cleaner(species):
 							
 						if dates[1] not in data[id][dates[0]]:
 							data[id][dates[0]][dates[1]]=[]
-						shit=[]
-						shit.append(id)
-						shit.append(row[4])
-						shit.append(row[5])
-						data[id][dates[0]][dates[1]].append(shit)
+						observationData=[]
+						observationData.append(id)
+						observationData.append(row[4])
+						observationData.append(row[5])
+						data[id][dates[0]][dates[1]].append(observationData)
 				
 						#writer.writerow(shit)
 
