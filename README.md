@@ -8,7 +8,7 @@ R Packages: rgdal, raster, sp, dismo, maptools
 
 Getting Started: (Gathering Data)
 1. Clone everything from our github via: git clone https://github.com/foxtrotington/butterfly.git
-2. Aquire data via running the Final_Request_Solution.py script in the PythonSDM folder of this github
+2. Aquire data via running the Final_Request_Solution.py script
 3. Run the kensakulizer.py script
 
 How to Use: (Running the SDM)
