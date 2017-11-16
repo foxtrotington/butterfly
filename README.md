@@ -6,19 +6,19 @@ System Requirements: Software: Python 3.6, R, Anaconda, Bash, (Maybe Access to H
 
 Getting Started: (Gathering Data)
 
-1
+1.
 Clone everything from our github via: git clone https://github.com/foxtrotington/butterfly.git
 Aquire data via running the Final_Request_Solution.py script in the PythonSDM folder of this github
 Run the kensakulizer.py script
 How to Use: (Running the SDM).
 
-2
-go to "PythonSDM" folder
+2.
+Go to "PythonSDM" folder
 
-3
-run "get_observation_data_run_sdm.sh"
+3.
+Run "get_observation_data_run_sdm.sh"
 
-you will see the SDM result divided by taxon id, year and month in "output" folder on the root directory. Is there is no observation in a month in a year for a taxon id, the folder does not exist.
+You will see the SDM result divided by taxon id, year and month in "output" folder on the root directory. Is there is no observation in a month in a year for a taxon id, the folder does not exist.
 
 If you just want the observation data from iNaturalist, run "data-puller.py" and you will get all observation raw data as csv files with the taxon id recorded in "taxon-id.txt".
 
