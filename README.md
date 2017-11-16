@@ -20,7 +20,7 @@ run "get_observation_data_run_sdm.sh"
 
 you will see the SDM result divided by taxon id, year and month in "output" folder on the root directory. Is there is no observation in a month in a year for a taxon id, the folder does not exist.
 
-If you just want the observation data from iNaturalist, run "get_obs.sh"
+If you just want the observation data from iNaturalist, run "data-puller.py" and you will get all observation raw data as csv files with the taxon id recorded in "taxon-id.txt".
 
 
 Output:
