@@ -7,13 +7,15 @@ Software: Python 3.6, R, Anaconda, Bash, (Maybe Access to HPC)
 R Packages: rgdal, raster, sp, dismo, maptools
 
 Getting Started: (Gathering Data)
-1. Clone everything from Jeff Oliver's github via: git clone https://github.com/jcoliver/ebutterfly-sdm.git
-2. Clone everything from our github via: git clone https://github.com/foxtrotington/butterfly.git
-3. Aquire Data via running the Final_Request_Solution.py script in the PythonSDM folder of this github
-4. Run the kensakulizer.py script
+1. Clone everything from our github via: git clone https://github.com/foxtrotington/butterfly.git
+2. Aquire data via running the Final_Request_Solution.py script in the PythonSDM folder of this github
+3. Run the kensakulizer.py script
 
 How to Use: (Running the SDM)
-1.
+1. 
+
+Output:
+
 
 
 License:
