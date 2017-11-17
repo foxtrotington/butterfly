@@ -31,9 +31,8 @@ Output:
 ![alt text](https://github.com/foxtrotington/butterfly/blob/master/52773-prediction_360.png) ![alt text](https://github.com/foxtrotington/butterfly/blob/master/52773-prediction_360%20(1).png)
 
 
-Runtimes:
+Runtimes:  
 Estimated run time of gathering observation data via Final_Request_Solution.py: 46 minutes
-
 Estimated run time for running of the SDM: approximately 4 hours
 
 
