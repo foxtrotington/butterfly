@@ -27,7 +27,8 @@ If you just want the observation data from iNaturalist:
 You will get all observation raw data as csv files with the taxon id recorded in "taxon-id.txt".
 
 Output:
-![alt text](https://github.com/foxtrotington/butterfly/blob/master/52773-prediction_360.png)
+![alt text](https://github.com/foxtrotington/butterfly/blob/master/52773-prediction_360.png) ![alt text](https://github.com/foxtrotington/butterfly/blob/master/52773-prediction_360%20(1).png)
+
 
 Runtimes:
 Estimated run time of gathering observation data via Final_Request_Solution.py: 46 minutes
