@@ -28,7 +28,6 @@ You will get all observation raw data as csv files with the taxon id recorded in
 
 Output:
 
-
 ![alt text](https://github.com/foxtrotington/butterfly/blob/master/52773-prediction_360.png) ![alt text](https://github.com/foxtrotington/butterfly/blob/master/52773-prediction_360%20(1).png)
 
 
