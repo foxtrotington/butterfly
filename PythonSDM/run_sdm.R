@@ -48,9 +48,14 @@ if (substring(text = outpath, first = nchar(outpath), last = nchar(outpath)) != 
   outpath <- paste0(outpath, "/")
 }
 
+# get the month and year parameter
+# TODO: check if it is possible to run this file withiout 4th and 5th parameter (null)
+year <- args[4]
+month <- args[5]
+
 # print("outpath")
 # print(outpath)
-print("OK")
+print("all parameters correctly passed")
 
 # Make sure directories are writable
 required.writables <- c("data", outpath)
@@ -75,7 +80,6 @@ if (length(missing.packages) > 0) {
 }
 
 
-print("OK2")
 ################################################################################
 # DATA
 # Read in raw data
@@ -105,7 +109,7 @@ min.lon = floor(min(obs.data$lon))
 geographic.extent <- extent(x = c(min.lon, max.lon, min.lat, max.lat))
 
 
-print("OK3")
+print("weather data request start. it make take some time when running this code for the first time.")
 
 # Get the biolim data by accessing http://biogeo.ucdavis.edu/data/climate/worldclim/1_4/grid/cur/bio_2-5m_bil.zip
 bioclim.data <- getData(name = "worldclim",
@@ -114,7 +118,7 @@ bioclim.data <- getData(name = "worldclim",
                         path = "data/")
 bioclim.data <- crop(x = bioclim.data, y = geographic.extent)
 
-print("OK4")
+print("weather data request start. end")
 
 # Create pseudo-absence points (making them up, using 'background' approach)
 raster.files <- list.files(path = paste0(system.file(package = "dismo"), "/ex"),
