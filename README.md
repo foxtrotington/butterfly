@@ -2,6 +2,7 @@ Midterm Make-Up Project
 
 Our project is an accumluation of scripts that pull data from iNaturalist and complile them into a CSV file. This CSV file is then pushed into the Species Distribution Model provided by the clients and output a heat map based on a specified species and month/year. To allow it to be interactive we have accumlated the neccessary code into a Jupyter Notebook file which takes user input to output the SDM image from the specified year/month for the specified species. We have included all necessary documentation to go along with our scripts and our Cyverse wiki is completely updated.
 
+
 System Requirements: Software: Python 3.6, R, Anaconda, Bash, (Maybe Access to HPC) R Packages: rgdal, raster, sp, dismo, maptools
 
 Getting Started: (Gathering Data)
@@ -27,7 +28,9 @@ If you just want the observation data from iNaturalist:
 You will get all observation raw data as csv files with the taxon id recorded in "taxon-id.txt".
 
 
+
 Output:
+
 
 
 Runtimes:
@@ -38,5 +41,6 @@ Estimated run time for running of the SDM: approximately 4 hours
 License: This program is released under the MIT license.
 
 Contributors: Danielle Perry, Kensaku Okada, Eddie Ornelas, Alexander Farmer, Adrianna Salazar
+
 
 
