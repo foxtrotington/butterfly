@@ -6,17 +6,25 @@ System Requirements: Software: Python 3.6, R, Anaconda, Bash, (Maybe Access to H
 
 Getting Started: (Gathering Data)
 
-1. Clone everything from our github via: git clone https://github.com/foxtrotington/butterfly.git
-2. Aquire data via running the Final_Request_Solution.py script in the PythonSDM folder of this github
-3. Run the kensakulizer.py script
+1. Clone everything from our github by running the command
+   -> git clone https://github.com/foxtrotington/butterfly.git
+2. Aquire data via
+    Navigating to the PythonSDM folder -> cd butterfly/PythonSDM
+    Then running the Final Request Solution script -> python Final_Request_Solution.py
+3. Run the kensakulizer script to clean the data
+    -> python kensakulizer.py
 
 How to Use: (Running the SDM)
-1. Go to "PythonSDM" folder
-2. Run "get_observation_data_run_sdm.sh"
+1. Navigate to PythonSDM folder
+    -> cd butterfly/PythonSDM
+2. Run "get_observation_data_run_sdm.sh" 
+    -> python get_observation_data_run_sdm.sh
 
-You will see the SDM result divided by taxon id, year and month in "output" folder on the root directory. Is there is no observation in a month in a year for a taxon id, the folder does not exist.
+You will see the SDM result divided by taxon id, year and month in "output" folder on the root directory. If you see there is no folder for a certain month, then there was no observation data for that month for that certain taxon id.
 
-If you just want the observation data from iNaturalist, run "data-puller.py" and you will get all observation raw data as csv files with the taxon id recorded in "taxon-id.txt".
+If you just want the observation data from iNaturalist:
+    Run "data-puller.py" -> python data_puller.py
+You will get all observation raw data as csv files with the taxon id recorded in "taxon-id.txt".
 
 
 Output:
