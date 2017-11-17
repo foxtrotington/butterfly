@@ -32,7 +32,7 @@ Output:
 
 
 Runtimes:  
-Estimated run time of gathering observation data via Final_Request_Solution.py: 46 minutes
+Estimated run time of gathering observation data via Final_Request_Solution.py: 46 minutes                  
 Estimated run time for running of the SDM: approximately 4 hours
 
 
