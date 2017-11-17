@@ -64,25 +64,25 @@ def cleaner(species):
 
 			masterWrite = []
 			for ids in data:
-				directory = ''
-				directory = str(id)
+				directory = 'data/inaturalist/'
+				directory += str(id)
 				if not os.path.exists(directory):
 					os.makedirs(directory)
 
 				for years in data[ids]:
-					directory = str(id)
+					directory = 'data/inaturalist/'+str(id)
 					directory += "/" + str(years)
 					if not os.path.exists(directory):
 						os.makedirs(directory)
 					
 
 					for months in data[ids][years]:
-						directory = str(id)+'/'+str(years)
+						directory = 'data/inaturalist/'+str(id)+'/'+str(years)
 						directory += "/" + str(months)
 						if not os.path.exists(directory):
 							os.makedirs(directory)
 
-						outtie = open(directory+'/'+str(id)+"-"+str(years)+"-"+str(months)+".csv",'w',newline='',encoding='utf-8')
+						outtie = open(directory+'/'+str(years)+"-"+str(months)+".csv",'w',newline='',encoding='utf-8')
 						headers = ["taxonID", "latitude", "longitude"]
 						writer = csv.writer(outtie)
 						writer.writerow(headers)
@@ -91,7 +91,7 @@ def cleaner(species):
 							masterWrite.append(geo)
 							writer.writerow(geo)
 
-					outtie = open(str(id)+"/" + str(years)+'/'+str(id)+"-"+str(years)+".csv",'w',newline='',encoding='utf-8')
+					outtie = open('data/inaturalist/'+str(id)+"/" + str(years)+'/'+str(id)+"-"+str(years)+".csv",'w',newline='',encoding='utf-8')
 					headers = ["taxonID", "latitude", "longitude"]
 					writer = csv.writer(outtie)
 					writer.writerow(headers)
