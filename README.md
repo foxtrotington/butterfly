@@ -20,15 +20,14 @@ How to Use: (Running the SDM)
 2. Run "get_observation_data_run_sdm.sh" 
     -> python get_observation_data_run_sdm.sh
 
-You will see the SDM result divided by taxon id, year and month in "output" folder on the root directory. If you see there is no folder for a certain month, then there was no observation data for that month for that certain taxon id.
+You will see the SDM result divided by taxon id, year, and month in "output" folder on the root directory. If you see there is no folder for a certain month, then there was no observation data for that month for that certain taxon id.
 
 If you just want the observation data from iNaturalist:
     Run "data-puller.py" -> python data_puller.py
 You will get all observation raw data as csv files with the taxon id recorded in "taxon-id.txt".
 
-
 Output:
-
+![alt text](https://github.com/foxtrotington/butterfly/blob/master/52773-prediction_360.png)
 
 Runtimes:
 Estimated run time of gathering observation data via Final_Request_Solution.py: 46 minutes
