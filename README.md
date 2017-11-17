@@ -38,9 +38,9 @@ You will get all observation raw data as csv files with the taxon id recorded in
 	Estimated run time for running of the SDM: approximately 4 hours
 
 
-## License: This program is released under the MIT license.
+License: This program is released under the MIT license.
 
-## Contributors: Danielle Perry, Kensaku Okada, Eddie Ornelas, Alexander Farmer, Adrianna Salazar
+Contributors: Danielle Perry, Kensaku Okada, Eddie Ornelas, Alexander Farmer, Adrianna Salazar
 
 
 
