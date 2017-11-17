@@ -188,7 +188,7 @@ def main():
     app_secret = '62899ac1d355f1743b84db1e21e94f2bc40de4915cb7a2cb2afaeab41dfb0de8'
     username = 'ornelaseduardo'
     password = 'qb7A1PAl4eRp6rPh'
-    file = "taxon-Ids.txt"
+    file = "taxon-ids.txt"
     print("Running")
     # butterflys = listOfIdsNames(file)
     butterflys = {48578:'Anteos maerula'}
