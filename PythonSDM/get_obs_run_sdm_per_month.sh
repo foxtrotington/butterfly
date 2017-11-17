@@ -1,12 +1,12 @@
 # get the grand to read the folloing file
 # chmod u+x ../data/gbif/taxon-ids.txt
-chmod u+x ./taxon-ids.txt
-chmod u+x ./taxon-ids-short.txt
-chmod u+x ./output
+chmod u+x ./taxon_ids.txt
+# chmod u+x ./taxon_ids_short.txt
 
 
-
-
+# call kensakulizer. It download all observation data on taxon-id.txt, separate the data into each year and month.
+# the csv files are stored on data/inaturalist
+python kensakulizer.py
 
 # get the list of taxon ids removing a header
 # this does not work
@@ -18,19 +18,7 @@ taxon_ids=$(cat ./taxon-ids-short.txt | cut -f 1 | tail -n +2 $taxon_ids)
 echo '$taxon_ids'
 echo $taxon_ids
 
-
-# declare and initialize the variables
-# year=""
-# month=""
-
-# insert the data
-# $year=2011
-# $month=10
-
-# initialize the counter
-count=0
-
-echo 'calling run-sdm.R loop start'
+echo 'get_obs_run_sdm_per_month loop start'
 echo $(date '+%y/%m/%d %H:%M:%S')
 
 # for loop for each taxon id
@@ -62,18 +50,19 @@ do
 		# get the month from each file name d = delimiter (`-`)
 		# month=$(basename $filename | cut -d '-' -f 3)
 
-		echo 'taxon id is ' $taxon_id ' and year is ' $year ' and month is ' $month
-
+		echo 'run-sdm.R loop start. taxon id is ' $taxon_id ' and year is ' $year ' and month is ' $month
+		echo $(date '+%y/%m/%d %H:%M:%S')
 
 		# make the output folder if does not exist
-		mkdir -p ../output/$taxon_id/$year/$month
+		mkdir -p ../data/sdm_results/$taxon_id/$year/$month
 
 		# run SDM file
 		# Rscript --vanilla run-sdm.R <path/to/data/file> <output-file-prefix> <path/to/output/directory/>
 		# old command
 		# Rscript --vanilla run_sdm.R ./data/inaturalist/$taxon_id-iNaturalist.csv $taxon_id ../output/$taxon_id
 		Rscript --vanilla run_sdm.R ./data/inaturalist/$taxon_id/$year/$month/$taxon_id-$year-$month.csv $taxon_id ../output/$taxon_id/$year/$month
-
+		echo 'run-sdm.R loop end.'
+		echo $(date '+%y/%m/%d %H:%M:%S')
 
 		done
 
@@ -82,7 +71,7 @@ do
 done
 
 
-echo 'script end'
+echo 'get_obs_run_sdm_per_month loop end'
 echo $(date '+%y/%m/%d %H:%M:%S')
 
 
