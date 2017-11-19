@@ -134,9 +134,6 @@ colnames(background.points) <- c("lon", "lat")
 presence.values <- extract(x = bioclim.data, y = obs.data)
 absence.values <- extract(x = bioclim.data, y = background.points)
 
-print("OK5")
-
-
 ################################################################################
 # ANALYSIS
 # Divide data into testing and training

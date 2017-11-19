@@ -2,7 +2,7 @@ chmod u+x ../data/gbif/taxon-ids.txt
 
 # get the list of taxon ids removing a header
 # taxon_ids= cat ../data/gbif/taxon-ids.txt | cut -f 1 | tail -n +2 $taxon_ids
-# taxon_ids=$(cat ./taxon-ids.txt | cut -f 1 | tail -n +2 $taxon_ids)
+taxon_ids=$(cat ./taxon-ids.txt | cut -f 1 | tail -n +2 $taxon_ids)
 taxon_ids=$(cat ./taxon-ids-short.txt | cut -f 1 | tail -n +2 $taxon_ids)
 echo '$taxon_ids'
 echo $taxon_ids
@@ -15,9 +15,16 @@ year=""
 month=""
 
 # insert the data
-# TODO the year and month data should be passed by Data-Puller.py
 $year=2011
 $month=10
+
+
+hoge="52773-2005-08"
+echo $hoge|cut -d "-" -f 3
+a=$(basename $hoge | cut -d '-' -f 3) 
+echo $a
+
+
 
 echo 'calling run-sdm.R loop start'
 echo $(date '+%y/%m/%d %H:%M:%S')
