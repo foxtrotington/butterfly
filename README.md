@@ -7,11 +7,11 @@ System Requirements: Software: Python 3.6, R, Anaconda, Bash
 R Packages: rgdal, raster, sp, dismo, maptools
 
 # Table of Content
-[Getting Started] (https://github.com/foxtrotington/butterfly#getting-started-gathering-data)
-[link text] (https://github.com/foxtrotington/butterfly#how-to-use-running-the-sdm) How to Use
-[link text] (https://github.com/foxtrotington/butterfly#output) Output
-[link text] (https://github.com/foxtrotington/butterfly#data-consolidation) Data Consolidation
-[link text] (https://github.com/foxtrotington/butterfly#runtimes) Runtimes
+- [Getting Started](https://github.com/foxtrotington/butterfly#getting-started-gathering-data)
+- [How to Use](https://github.com/foxtrotington/butterfly#how-to-use-running-the-sdm)
+- [Output](https://github.com/foxtrotington/butterfly#output)
+- [Data Consolidation](https://github.com/foxtrotington/butterfly#data-consolidation) 
+- [Runtimes](https://github.com/foxtrotington/butterfly#runtimes)
 
 # <a name="getting-started"></a>Getting Started: (Gathering Data)
 
