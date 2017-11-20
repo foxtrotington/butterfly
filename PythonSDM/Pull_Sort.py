@@ -151,7 +151,7 @@ def dataPuller(species,headers1):
                 if not os.path.exists(directory):
                     os.makedirs(directory)
 
-                outtie = open('data/inaturalist/'+str(butterfly)+'/'+str(years)+'/'+str(months)+'/'+str(butterfly)+"-"+str(years)+"-"+str(months)+".csv",'w',newline='',encoding='utf-8')
+                outtie = open('data/inaturalist/'+str(butterfly)+'/'+str(years)+'/'+str(months)+'/'+str(butterfly)+".csv",'w',newline='',encoding='utf-8')
                 headers = ["taxonID", "latitude", "longitude"]
                 writer = csv.writer(outtie)
                 writer.writerow(headers)
@@ -162,7 +162,7 @@ def dataPuller(species,headers1):
                 outtie.close()
             sp.call('cls',shell=True)
 
-            outtie = open('data/inaturalist/'+str(butterfly)+"/" + str(years)+'/'+str(butterfly)+"-"+str(years)+".csv",'w',newline='',encoding='utf-8')
+            outtie = open('data/inaturalist/'+str(butterfly)+"/" + str(years)+'/'+str(butterfly)+".csv",'w',newline='',encoding='utf-8')
             headers = ["taxonID", "latitude", "longitude"]
             writer = csv.writer(outtie)
             writer.writerow(headers)
@@ -175,6 +175,7 @@ def dataPuller(species,headers1):
 #---------DATA STRUCT----------DATA STRUCT---------------------
         with open('data/inaturalist/'+str(butterfly)+'/'+str(butterfly)+".csv", "w",encoding='utf-8') as file:
             writer = csv.writer(file)
+            writer.writerow(headers)
 
             writer.writerows(tempList)
         tempList = []
