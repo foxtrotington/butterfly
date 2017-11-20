@@ -13,8 +13,6 @@ R Packages: rgdal, raster, sp, dismo, maptools
 2. Aquire data via
     Navigating to the PythonSDM folder -> cd butterfly/PythonSDM
     Then running the Pull_Sort script -> python Pull_Sort.py
-3. Run the kensakulizer script to clean the data
-    -> python kensakulizer.py
 
 # How to Use: (Running the SDM)
 1. Navigate to PythonSDM folder
