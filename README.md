@@ -35,7 +35,9 @@ You will get all observation raw data as csv files with the taxon id recorded in
 
 
 # Troubleshooting:
-
+Directories: We encountered an issue where the directories were not being created properly and we found that it was because we were not reseting the current directory.
+Data Accessing: Data was missing lat/long values which we chose to fix by adding empty cells
+Writing Data: We had issues writing the entire yearly data out and the fix was to write all month data for that year.
 
 License: This program is released under the MIT license.
 
