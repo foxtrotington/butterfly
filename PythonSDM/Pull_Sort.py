@@ -175,6 +175,7 @@ def dataPuller(species,headers1):
 #---------DATA STRUCT----------DATA STRUCT---------------------
         with open('data/inaturalist/'+str(butterfly)+'/'+str(butterfly)+".csv", "w",encoding='utf-8') as file:
             writer = csv.writer(file)
+            headers = ["taxonID", "latitude", "longitude","date"]
             writer.writerow(headers)
             writer.writerows(tempList)
         tempList = []
