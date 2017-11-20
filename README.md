@@ -29,6 +29,9 @@ You will get all observation raw data as csv files with the taxon id recorded in
 # Output:
 ![alt text](https://github.com/foxtrotington/butterfly/blob/master/52773-prediction_360.png) ![alt text](https://github.com/foxtrotington/butterfly/blob/master/52773-prediction_360%20(1).png)
 
+# Data Consolidation
+By running `data-consolidation.py` in the scripts_eddie folder, you can combine multiple observation CSVs together. All you need to do is give it paths to the CSV files and the headers you want from those CSVs. What should be generated if all the correct information is supplied is a master_csv file under `data/out/master_csv.csv`
+
 # Runtimes:
 	Estimated run time of gathering observation data and sorting via Pull_Sort.py: 36 minutes
 	Estimated run time for running of the SDM: approximately 4 hours
