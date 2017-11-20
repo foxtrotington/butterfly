@@ -152,7 +152,7 @@ def dataPuller(species,headers1):
                     os.makedirs(directory)
 
                 outtie = open('data/inaturalist/'+str(butterfly)+'/'+str(years)+'/'+str(months)+'/'+str(butterfly)+".csv",'w',newline='',encoding='utf-8')
-                headers = ["taxonID", "latitude", "longitude","date"]
+                headers = ["taxonID", "latitude", "longitude"]
                 writer = csv.writer(outtie)
                 writer.writerow(headers)
 
@@ -163,7 +163,7 @@ def dataPuller(species,headers1):
             sp.call('cls',shell=True)
 
             outtie = open('data/inaturalist/'+str(butterfly)+"/" + str(years)+'/'+str(butterfly)+".csv",'w',newline='',encoding='utf-8')
-            headers = ["taxonID", "latitude", "longitude","date"]
+            headers = ["taxonID", "latitude", "longitude"]
             writer = csv.writer(outtie)
             writer.writerow(headers)
             print("Final write outs")
