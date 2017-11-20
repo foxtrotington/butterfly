@@ -7,7 +7,7 @@ System Requirements: Software: Python 3.6, R, Anaconda, Bash
 R Packages: rgdal, raster, sp, dismo, maptools
 
 # Table of Content
-[link text] (#getting-started) Getting Started
+[link] (#getting-started) Getting Started
 [link text] (https://github.com/foxtrotington/butterfly#how-to-use-running-the-sdm) How to Use
 [link text] (https://github.com/foxtrotington/butterfly#output) Output
 [link text] (https://github.com/foxtrotington/butterfly#data-consolidation) Data Consolidation
