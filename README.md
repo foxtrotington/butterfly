@@ -37,7 +37,7 @@ You will get all observation raw data as csv files with the taxon id recorded in
 ![alt text](https://github.com/foxtrotington/butterfly/blob/master/52773-prediction_360.png) ![alt text](https://github.com/foxtrotington/butterfly/blob/master/52773-prediction_360%20(1).png)
 
 # Data Consolidation
-By running `data-consolidation.py` in the scripts_eddie folder, you can combine multiple observation CSVs together. All you need to do is give it paths to the CSV files and the headers you want from those CSVs. What should be generated if all the correct information is supplied is a master_csv file under `data/out/master_csv.csv`
+By running `data-consolidation.py` in the scripts_eddie folder, we were able to combine multiple observation CSVs together. By using observation id as the pivot point for joining all three CSVs, we were able to output a CSV with ~400,000 observation points from GBIF, Jeffs get_observation and downloading the iNaturalist data dump. This table is optimal for `run_sdm` consumption and will be here for the benefit of other teams. The file can be found under  `data/master_csv.csv`
 
 # Runtimes:
 	Estimated run time of gathering observation data and sorting via Pull_Sort.py: 36 minutes
