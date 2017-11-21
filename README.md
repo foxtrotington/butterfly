@@ -44,6 +44,11 @@ By running `data-consolidation.py` in the scripts_eddie folder, you can combine 
 	Estimated run time for running of the SDM: approximately 4 hours
 
 
+# Troubleshooting:
+Directories: We encountered an issue where the directories were not being created properly and we found that it was because we were not reseting the current directory.                            
+Data Accessing: Data was missing lat/long values which we chose to fix by adding empty cells                       
+Writing Data: We had issues writing the entire yearly data out and the fix was to write all month data for that year.
+
 License: This program is released under the MIT license.
 
 Contributors: Danielle Perry, Kensaku Okada, Eddie Ornelas, Alexander Farmer, Adrianna Salazar
