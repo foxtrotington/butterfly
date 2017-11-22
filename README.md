@@ -7,11 +7,20 @@ System Requirements: Software: Python 3.6, R, Anaconda, Bash
 R Packages: rgdal, raster, sp, dismo, maptools
 
 # Table of Content
+- [Important](https://github.com/foxtrotington/butterfly#important)
 - [Getting Started](https://github.com/foxtrotington/butterfly#getting-started-gathering-data)
 - [How to Use](https://github.com/foxtrotington/butterfly#how-to-use-running-the-sdm)
 - [Output](https://github.com/foxtrotington/butterfly#output)
 - [Data Consolidation](https://github.com/foxtrotington/butterfly#data-consolidation) 
 - [Runtimes](https://github.com/foxtrotington/butterfly#runtimes)
+
+# Important: 
+
+There is a limitation on the file sizes and project size when making pushes to Github. As such, a complete push of SDM data was not feasible. So the current solution is to push a sample of SDM data to prove the efficacy of the Jupyter Notebook solutions and other solutions. Currently, SDM data that has been pushed to Github are for the following taxonIds:
+
+1. 122381
+2. 84239
+3. 85026
 
 # <a name="getting-started"></a>Getting Started: (Gathering Data)
 
